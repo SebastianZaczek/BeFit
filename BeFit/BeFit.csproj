@@ -209,17 +209,42 @@
     <Compile Include="User_Controls\ProductInMeal_Control.Designer.cs">
       <DependentUpon>ProductInMeal_Control.cs</DependentUpon>
     </Compile>
-    <Content Include="Product_Images\Bułka kajzerka.jpeg" />
-    <Content Include="Product_Images\Chleb pszenny.jpeg" />
-    <Content Include="Product_Images\Cukier.jpeg" />
-    <Content Include="Product_Images\Jajo kurze.jpeg" />
-    <Content Include="Product_Images\Makaron Lubella Uszka.jpeg" />
-    <Content Include="Product_Images\Masło Ekstra.jpeg" />
-    <Content Include="Product_Images\Mleko Łaciate 2%25.jpeg" />
-    <Content Include="Product_Images\Olej rzepakowy.jpeg" />
-    <Content Include="Product_Images\Schab surowy.jpeg" />
-    <Content Include="Product_Images\Ser Żółty.jpeg" />
-    <Content Include="Product_Images\Surowa pierś z kurczaka.jpeg" />
+    <Content Include="Product_Images\Bułka kajzerka.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Chleb pszenny.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Cukier.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Jajo kurze.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Makaron Lubella Uszka.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Masło Ekstra.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Mleko Łaciate 2%25.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Olej rzepakowy.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Schab surowy.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Ser Żółty.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Product_Images\Surowa pierś z kurczaka.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Profiles\TestProfile.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Resources\meal_static_icon_mirror.png" />
     <None Include="Resources\meal_static_icon.png" />
     <None Include="Resources\static_meal_icon_reverse.png" />
@@ -296,9 +321,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Profiles\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
