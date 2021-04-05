@@ -31,7 +31,6 @@
             this.MainSplitContainer = new System.Windows.Forms.SplitContainer();
             this.splitContainer5 = new System.Windows.Forms.SplitContainer();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
-            this.Accuracy_TextProgressBar = new ProgressBarSample.TextProgressBar();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -58,6 +57,7 @@
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.Date_Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MainSplitContainer)).BeginInit();
             this.MainSplitContainer.Panel1.SuspendLayout();
             this.MainSplitContainer.Panel2.SuspendLayout();
@@ -141,7 +141,7 @@
             // 
             // splitContainer6.Panel1
             // 
-            this.splitContainer6.Panel1.Controls.Add(this.Accuracy_TextProgressBar);
+            this.splitContainer6.Panel1.Controls.Add(this.Date_Label);
             // 
             // splitContainer6.Panel2
             // 
@@ -149,18 +149,6 @@
             this.splitContainer6.Size = new System.Drawing.Size(168, 98);
             this.splitContainer6.SplitterDistance = 49;
             this.splitContainer6.TabIndex = 1;
-            // 
-            // Accuracy_TextProgressBar
-            // 
-            this.Accuracy_TextProgressBar.CustomText = "";
-            this.Accuracy_TextProgressBar.Location = new System.Drawing.Point(6, 10);
-            this.Accuracy_TextProgressBar.Name = "Accuracy_TextProgressBar";
-            this.Accuracy_TextProgressBar.ProgressColor = System.Drawing.Color.LightGreen;
-            this.Accuracy_TextProgressBar.Size = new System.Drawing.Size(153, 25);
-            this.Accuracy_TextProgressBar.TabIndex = 16;
-            this.Accuracy_TextProgressBar.TextColor = System.Drawing.Color.Black;
-            this.Accuracy_TextProgressBar.TextFont = new System.Drawing.Font("Times New Roman", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.Accuracy_TextProgressBar.VisualMode = ProgressBarSample.ProgressBarDisplayMode.CustomText;
             // 
             // label5
             // 
@@ -478,6 +466,18 @@
             this.metroLabel7.TabIndex = 1;
             this.metroLabel7.Text = "metroLabel7";
             // 
+            // Date_Label
+            // 
+            this.Date_Label.BackColor = System.Drawing.Color.Transparent;
+            this.Date_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Date_Label.ForeColor = System.Drawing.Color.Black;
+            this.Date_Label.Location = new System.Drawing.Point(3, 11);
+            this.Date_Label.Name = "Date_Label";
+            this.Date_Label.Size = new System.Drawing.Size(162, 23);
+            this.Date_Label.TabIndex = 12;
+            this.Date_Label.Text = "date and % value";
+            this.Date_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Summary_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,7 +539,6 @@
         private System.Windows.Forms.SplitContainer splitContainer6;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.SplitContainer splitContainer4;
-        private ProgressBarSample.TextProgressBar Accuracy_TextProgressBar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -554,5 +553,6 @@
         private System.Windows.Forms.Label CarboEaten_Label;
         private System.Windows.Forms.Label FatEaten_Label;
         private System.Windows.Forms.Label KcalEaten_Label;
+        private System.Windows.Forms.Label Date_Label;
     }
 }

@@ -18,6 +18,12 @@ namespace BeFit.User_Controls
         {
             InitializeComponent();
             Product = product;
+            OwnInitializeComponents();
+            
+        }
+
+        private void OwnInitializeComponents()
+        {
             ToolTip.SetToolTip(this.NameLabel, Product.Product.Name);
             NameLabel.Text = Product.Product.Name;
             KcalValue_Label.Text = Convert.ToString(Math.Round(Product.Product.Total_kcal_per_100 * (Product.Mass / 100), 1)) + " kcal";
@@ -33,13 +39,6 @@ namespace BeFit.User_Controls
             {
                 ProductPicture.Image = Properties.Resources.default_meal;
             }
-        }
-
-
-
-        private void RemoveProduct_Button_Click(object sender, EventArgs e)
-        {
-            // this.Dispose();
         }
     }
 }

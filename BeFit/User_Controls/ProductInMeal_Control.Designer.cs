@@ -102,7 +102,7 @@
             this.RemoveProduct_Button.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.RemoveProduct_Button.UseSelectable = true;
             this.RemoveProduct_Button.UseStyleColors = true;
-            this.RemoveProduct_Button.Click += new System.EventHandler(this.RemoveProduct_Button_Click);
+            
             // 
             // Fat_Label
             // 
