@@ -98,7 +98,7 @@ namespace BeFit.Forms
 
         private void RefreshControlsMeal()
         {
-            splitContainer3.Panel2.Controls.Clear(); //stare
+            splitContainer3.Panel2.Controls.Clear();
 
             MealsCount = 0;
             int index = List_Indexator.ReturnTodaysMealIndex(ActiveProfile.List_Of_meals);
@@ -115,14 +115,13 @@ namespace BeFit.Forms
                 }
                 p.Location = new Point(50, 15 + (MealsCount * 47));
                 MealsCount++;
-                splitContainer3.Panel2.Controls.Add(p); // stare
-
+                splitContainer3.Panel2.Controls.Add(p);
                 p.BringToFront();
                 p.Expand_Button.Click += new EventHandler(ExpandMeal);
             }
         }
 
-        private void RemoveControlMeal(object sender, EventArgs e)  //ale zajebalo nowicjuszem - do poprawy
+        private void RemoveControlMeal(object sender, EventArgs e)
         {
             GiveUserInfo_Form form = new GiveUserInfo_Form("Czy chcesz usunąć '" + (((sender as MetroButton).Parent as ProductInMeal_Control).Product.Product.Name) +
                 "'?");
@@ -342,7 +341,7 @@ namespace BeFit.Forms
             else
             {
                 //jesli w dzisiejszym daymealu znajduja sie posilki
-                //przycisk do dodawania produktu = enabled
+
                 if (ActiveProfile.List_Of_meals[index].Meals.Count != 0)
                 {
                     ExistMeals = true;
@@ -366,17 +365,8 @@ namespace BeFit.Forms
 
         private void SaveProfile_Button_Click(object sender, EventArgs e)
         {
-            try
-            {
-                ActiveProfile.SaveProfileToJson();
-                new GiveUserInfo_Form(false, "Profil zapisano pomyslnie");
-                IsChangedProfile = false;
-
-            }
-            catch
-            {
-                new GiveUserInfo_Form(true, "Wystąpił błąd podczas zapisu");
-            }
+            ActiveProfile.SaveProfileToJson();
+            IsChangedProfile = false;
         }
 
         private void Summary_Button_Click(object sender, EventArgs e)

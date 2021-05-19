@@ -38,12 +38,19 @@ namespace BeFit.Classes
         }
         public void SaveProfileToJson()
         {
-
-            FindAndRemoveOutdatedMeals();
-            using (StreamWriter writer = File.CreateText(GetPathJson()))
+            try
             {
-                JsonSerializer serializer = new JsonSerializer();
-                serializer.Serialize(writer, this);
+                FindAndRemoveOutdatedMeals();
+                using (StreamWriter writer = File.CreateText(GetPathJson()))
+                {
+                    JsonSerializer serializer = new JsonSerializer();
+                    serializer.Serialize(writer, this);
+                }
+                new GiveUserInfo_Form(false, "Profil zapisano pomyslnie");
+            }
+            catch
+            {
+                new GiveUserInfo_Form(true, "Wystąpił błąd podczas zapisu");
             }
         }
 

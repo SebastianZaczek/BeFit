@@ -22,7 +22,7 @@ namespace BeFit.User_Controls
 
         private void OwnInitializeCompomponents(Day_Meals daymeal)
         {
-            Date_Label.Top = 10;
+           
             KcalDemand_Label.Text = Math.Round(daymeal.CaloricDemand, 1).ToString() + " kcal";
             FatDemand_Label.Text = Math.Round(daymeal.FatDemand, 1).ToString() + " g";
             CarboDemand_Label.Text = Math.Round(daymeal.CarboDemand, 1).ToString() + " g";
